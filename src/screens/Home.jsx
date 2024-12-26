@@ -1,11 +1,10 @@
 import React from 'react'
 import { useNavigate } from "react-router"; 
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { logout } from '../redux/authSlice';
 
 function Home(props) {
   let navigate = useNavigate();
-  // const authValue = useSelector(state => state.userAuth.user)
   const dispatch = useDispatch()
   return (
     <div className="mt-5"> 
